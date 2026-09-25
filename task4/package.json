@@ -1,0 +1,26 @@
+{
+  "name": "phase6-database-tasks",
+  "version": "1.0.0",
+  "description": "Phase 6 database tasks — PostgreSQL (Prisma) and MongoDB (Mongoose) comparison",
+  "scripts": {
+    "aggregation": "node aggregation.js",
+    "transaction": "node transaction-rollback.js",
+    "prisma-test": "node prisma-test.js",
+    "prisma-queries": "node prisma-queries.js",
+    "mongo-queries": "node mongo-queries.js",
+    "seed": "node prisma/seed.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
+    "mongoose": "^8.5.0",
+    "pg": "^8.12.0",
+    "@prisma/client": "5.20.0"
+  },
+  "devDependencies": {
+    "prisma": "5.20.0"
+  }
+}
